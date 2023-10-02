@@ -9,7 +9,6 @@ connectDb();
 app.use("/api/product", require("./routes/featuresProduct.js"));
 //all product
 app.use("/api/allProduct", require("./routes/allProduct.js"));
-app.use("/api/allProduct");
 app.use(errorHandler);
 app.listen(port, () => {
   console.log(`Saver running on port ${port}`);
