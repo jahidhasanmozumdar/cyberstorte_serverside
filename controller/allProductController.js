@@ -41,6 +41,6 @@ const createProduct = asyncHandler(async (req, res) => {
     weight,
     dimensions,
   });
-  res.statusCode(201).json(Product);
+  res.status(201).json(Product);
 });
 module.exports = { getAllProduct, createProduct };
