@@ -4,6 +4,8 @@ const errorHandler = require("./MIddleware/errorHandler.js");
 const connectDb = require("./Config/dbConnection");
 const dotenv = require("dotenv").config();
 const port = process.env.PORT || 3000;
+const cors = require("cors");
+app.use(cors());
 app.use(express.json());
 connectDb();
 app.use("/api/product", require("./routes/featuresProduct.js"));
